@@ -243,6 +243,43 @@
       color: #a78bfa;
     }
 
+    /* ── SECTION MODES D'EMPLOI ── */
+    .modes-emploi {
+      width: 100%;
+      max-width: 1120px;
+      margin-top: 1.25rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 16px;
+      padding: 1rem 0.85rem 1.25rem;
+      backdrop-filter: blur(4px);
+    }
+
+    .modes-emploi-header {
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 0.55rem 0.75rem;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+      color: #9ca3af;
+    }
+
+    .modes-emploi-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .modes-emploi-btns .btn:hover {
+      background: rgba(156, 163, 175, 0.1);
+      border-color: #6b7280;
+      box-shadow: 0 0 10px rgba(156, 163, 175, 0.1);
+      transform: translateY(-2px);
+    }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 860px) {
       .grid { grid-template-columns: repeat(2, 1fr); }
@@ -301,6 +338,14 @@
       <a href="https://cloudlasalle.sharepoint.com/sites/SkillQuest-EquipeEnseignante/Documents%20partages/Discussion%20et%20Vie%20d%20Equipe/Saisie%20des%20activite%CC%81s%20S2.xlsx?d=w0f7fb3f582cd419fa77eb53bdf516448&csf=1&web=1&e=b8vB44" target="_blank" rel="noopener" class="btn btn-icon"><img src="saisie-activites-minimal-icon.svg" alt="" />Saisie des activités</a>
     </div>
 
+  </div>
+
+  <div class="modes-emploi">
+    <div class="modes-emploi-header">Modes d'emploi</div>
+    <div class="modes-emploi-btns">
+      <a href="https://cloudlasalle.sharepoint.com/sites/apex/Coffre%20SkillQuest/_Outils_Gestion/Ressources_Outils_Gestion/qcm.pdf?csf=1&web=1&e=XHLI5E" target="_blank" rel="noopener" class="btn">Génerer un QCM</a>
+      <a href="https://cloudlasalle.sharepoint.com/sites/SkillQuest-EquipeEnseignante-ConseildesGuides/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FSkillQuest%2DEquipeEnseignante%2DConseildesGuides%2FDocuments%20partages%2FConseil%20des%20Guides%2FGuide%20des%20e%CC%81valuations%20Moodle%2Epdf&parent=%2Fsites%2FSkillQuest%2DEquipeEnseignante%2DConseildesGuides%2FDocuments%20partages%2FConseil%20des%20Guides" target="_blank" rel="noopener" class="btn">Guide Test Moodle</a>
+    </div>
   </div>
 
   <div class="footer">
