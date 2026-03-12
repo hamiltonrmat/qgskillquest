@@ -251,26 +251,60 @@
       background: rgba(255, 255, 255, 0.02);
       border: 1px solid rgba(255, 255, 255, 0.06);
       border-radius: 16px;
-      padding: 1rem 0.85rem 1.25rem;
       backdrop-filter: blur(4px);
     }
 
-    .modes-emploi-header {
+    .modes-emploi summary {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      padding: 0.8rem 1rem;
+      cursor: pointer;
       font-size: 0.78rem;
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      text-align: center;
-      padding: 0.55rem 0.75rem;
-      border-radius: 8px;
-      margin-bottom: 0.75rem;
       color: #9ca3af;
+      border-radius: 16px;
+      transition: color 0.2s, background 0.2s;
+      user-select: none;
+    }
+
+    .modes-emploi summary::-webkit-details-marker { display: none; }
+
+    .modes-emploi summary:hover {
+      color: #d1d5db;
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .modes-emploi summary img {
+      width: 20px;
+      height: 20px;
+      opacity: 0.6;
+    }
+
+    .modes-emploi summary .chevron {
+      font-size: 0.7rem;
+      transition: transform 0.25s;
+      margin-left: 0.25rem;
+    }
+
+    .modes-emploi[open] summary .chevron {
+      transform: rotate(180deg);
+    }
+
+    .modes-emploi[open] summary {
+      border-radius: 16px 16px 0 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     .modes-emploi-btns {
       display: flex;
       flex-wrap: wrap;
       gap: 0.6rem;
+      padding: 1rem 0.85rem 1.25rem;
     }
 
     .modes-emploi-btns .btn:hover {
@@ -340,13 +374,17 @@
 
   </div>
 
-  <div class="modes-emploi">
-    <div class="modes-emploi-header">Modes d'emploi</div>
+  <details class="modes-emploi">
+    <summary>
+      <img src="userguide.png" alt="" />
+      Modes d'emploi
+      <span class="chevron">▼</span>
+    </summary>
     <div class="modes-emploi-btns">
       <a href="https://cloudlasalle.sharepoint.com/sites/apex/Coffre%20SkillQuest/_Outils_Gestion/Ressources_Outils_Gestion/qcm.pdf?csf=1&web=1&e=XHLI5E" target="_blank" rel="noopener" class="btn">Génerer un QCM</a>
       <a href="https://cloudlasalle.sharepoint.com/sites/SkillQuest-EquipeEnseignante-ConseildesGuides/Documents%20partages/Forms/AllItems.aspx?id=%2Fsites%2FSkillQuest%2DEquipeEnseignante%2DConseildesGuides%2FDocuments%20partages%2FConseil%20des%20Guides%2FGuide%20des%20e%CC%81valuations%20Moodle%2Epdf&parent=%2Fsites%2FSkillQuest%2DEquipeEnseignante%2DConseildesGuides%2FDocuments%20partages%2FConseil%20des%20Guides" target="_blank" rel="noopener" class="btn">Guide Test Moodle</a>
     </div>
-  </div>
+  </details>
 
   <div class="footer">
     <img src="IconeSkillQuest2.svg" alt="Logo SkillQuest" />
