@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="slideMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4fd"/>
+      <stop offset="100%" style="stop-color:#c8dff0"/>
+    </linearGradient>
+    <linearGradient id="slideBehind1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#dbeafe"/>
+      <stop offset="100%" style="stop-color:#bfdbfe"/>
+    </linearGradient>
+    <linearGradient id="slideBehind2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#eff6ff"/>
+      <stop offset="100%" style="stop-color:#dbeafe"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#2563eb"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="barGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="barGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#60a5fa"/>
+      <stop offset="100%" style="stop-color:#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="barGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd"/>
+      <stop offset="100%" style="stop-color:#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="sparkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f7c948"/>
+      <stop offset="100%" style="stop-color:#f0a500"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softShadow">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="shadowBehind">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.5" flood-color="#000" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  <circle cx="50" cy="50" r="48" fill="url(#bgGrad)"/>
+  <circle cx="50" cy="50" r="48" fill="none" stroke="#2563eb" stroke-width="0.8" opacity="0.5"/>
+  <g filter="url(#shadowBehind)">
+    <rect x="20" y="21" width="56" height="38" rx="3" fill="url(#slideBehind2)" transform="rotate(-5, 48, 40)"/>
+  </g>
+  <g filter="url(#shadowBehind)">
+    <rect x="20" y="21" width="56" height="38" rx="3" fill="url(#slideBehind1)" transform="rotate(-2, 48, 40)"/>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="18" y="22" width="58" height="40" rx="3" fill="url(#slideMain)"/>
+    <rect x="18" y="22" width="58" height="9" rx="3" fill="url(#headerGrad)"/>
+    <rect x="18" y="27" width="58" height="4" fill="url(#headerGrad)"/>
+    <line x1="24" y1="26.5" x2="52" y2="26.5" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.9"/>
+    <circle cx="70" cy="26.5" r="2" fill="white" opacity="0.5"/>
+  </g>
+  <rect x="26" y="45" width="7" height="12" rx="1" fill="url(#barGrad1)"/>
+  <rect x="36" y="40" width="7" height="17" rx="1" fill="url(#barGrad2)"/>
+  <rect x="46" y="43" width="7" height="14" rx="1" fill="url(#barGrad3)"/>
+  <line x1="57" y1="38" x2="70" y2="38" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="57" y1="43" x2="72" y2="43" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="57" y1="48" x2="68" y2="48" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="57" y1="53" x2="70" y2="53" stroke="#94a3b8" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="50" y1="62" x2="50" y2="70" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="38" y1="70" x2="62" y2="70" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="42" y1="62" x2="50" y2="70" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" opacity="0.6"/>
+  <line x1="58" y1="62" x2="50" y2="70" stroke="#3b82f6" stroke-width="1.8" stroke-linecap="round" opacity="0.6"/>
+  <g filter="url(#glow)" transform="translate(68, 68)">
+    <circle cx="0" cy="0" r="2.5" fill="url(#sparkGrad)"/>
+    <line x1="0" y1="-5.5" x2="0" y2="-10" stroke="#f7c948" stroke-width="2" stroke-linecap="round"/>
+    <line x1="0" y1="5.5" x2="0" y2="10" stroke="#f7c948" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-5.5" y1="0" x2="-10" y2="0" stroke="#f7c948" stroke-width="2" stroke-linecap="round"/>
+    <line x1="5.5" y1="0" x2="10" y2="0" stroke="#f7c948" stroke-width="2" stroke-linecap="round"/>
+    <line x1="-3.5" y1="-3.5" x2="-6" y2="-6" stroke="#f0a500" stroke-width="1.2" stroke-linecap="round"/>
+    <line x1="3.5" y1="-3.5" x2="6" y2="-6" stroke="#f0a500" stroke-width="1.2" stroke-linecap="round"/>
+    <line x1="-3.5" y1="3.5" x2="-6" y2="6" stroke="#f0a500" stroke-width="1.2" stroke-linecap="round"/>
+    <line x1="3.5" y1="3.5" x2="6" y2="6" stroke="#f0a500" stroke-width="1.2" stroke-linecap="round"/>
+  </g>
+  <circle cx="68" cy="68" r="13" fill="none" stroke="#f7c948" stroke-width="0.5" opacity="0.25" stroke-dasharray="3 3"/>
+</svg>

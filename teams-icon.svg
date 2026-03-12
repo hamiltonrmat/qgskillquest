@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7b83eb"/>
+      <stop offset="100%" style="stop-color:#6264a7"/>
+    </linearGradient>
+    <linearGradient id="shadowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4b4f8a" stop-opacity="0.5"/>
+      <stop offset="100%" style="stop-color:#2d2f5e" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="boxGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3d3f7a"/>
+      <stop offset="100%" style="stop-color:#2d2f5e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#bgGrad)"/>
+
+  <!-- Drop shadow shape (perspective) -->
+  <path d="M 28 42 L 60 36 L 60 72 L 28 66 Z" fill="url(#shadowGrad)" opacity="0.45" transform="translate(4,4)"/>
+
+  <!-- T box (left panel) -->
+  <rect x="22" y="35" width="38" height="36" rx="4" fill="url(#boxGrad)"/>
+
+  <!-- T letter -->
+  <rect x="30" y="42" width="22" height="3.5" rx="1.5" fill="white"/>
+  <rect x="39" y="42" width="4" height="20" rx="1.5" fill="white"/>
+
+  <!-- People icons (right side) -->
+  <!-- Person 1 head -->
+  <circle cx="68" cy="38" r="6" fill="#3d3f7a"/>
+  <!-- Person 1 body -->
+  <path d="M 58 56 Q 58 48 68 48 Q 78 48 78 56" fill="#3d3f7a"/>
+
+  <!-- Person 2 head (smaller, behind) -->
+  <circle cx="77" cy="41" r="4.5" fill="#4b4f8a" opacity="0.9"/>
+  <!-- Person 2 body -->
+  <path d="M 69 57 Q 69 51 77 51 Q 85 51 85 57" fill="#4b4f8a" opacity="0.9"/>
+</svg>
