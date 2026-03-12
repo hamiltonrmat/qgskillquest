@@ -47,6 +47,27 @@
       transform: scale(1.06);
     }
 
+    /* ── LOGO UNILASALLE IP (BAS DROITE) ── */
+    .logo-unilasalle-ip {
+      position: fixed;
+      bottom: 1.25rem;
+      right: 1.5rem;
+      z-index: 10;
+    }
+
+    .logo-unilasalle-ip img {
+      height: 36px;
+      width: auto;
+      opacity: 0.45;
+      transition: opacity 0.2s, transform 0.2s;
+      display: block;
+    }
+
+    .logo-unilasalle-ip img:hover {
+      opacity: 1;
+      transform: scale(1.04);
+    }
+
     /* ── TITRE ── */
     .title-wrapper {
       margin-bottom: 3rem;
@@ -234,6 +255,10 @@
   </style>
 </head>
 <body>
+
+  <a class="logo-unilasalle-ip" href="https://www.unilasalle.fr" target="_blank" rel="noopener">
+    <img src="LOGO_UNILASALLE_INSTITUT_POLYTECHNIQUE_QUADRI.png" alt="UniLaSalle Institut Polytechnique" />
+  </a>
 
   <a class="logo-unilasalle" href="https://cloudlasalle.sharepoint.com/sites/apex" target="_blank" rel="noopener">
     <img src="apex_logo.jpg" alt="UniLaSalle" />
